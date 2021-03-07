@@ -1,12 +1,14 @@
-"""
+
 num = (input())
 words = input().split()
-
+print(words)
 result = []
 for i in words:
     for letter in i:
         e = ord(str(letter))
         d = chr(e - 5)
+        if d < 41:
+            
         result.append(d)
 for i in words:
     print(i)
@@ -34,3 +36,4 @@ def convert(result):
 w = len(words[0])
 x = convert(result)
 print(x[0:w], x[w:])
+"""
